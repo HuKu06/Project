@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;  
+}
+
+body{
+    background:rgb(45, 45, 45);
+}
+
+.navbar{
+    position:relative;
+    background: rgb(45, 45, 45);
+    width: 100%;
+    font-family: ubuntu ;
+
+}
+
+.logo{
+    margin-left: 60px;
+    margin-top: 0px;
+    color:#fff;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.logo span{
+    color: cyan;
+}
+
+.head{
+    color: white;
+    font-family: ubuntu;
+    font-size: 30px;
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+.head span{
+    color: cyan;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    position:absolute;
+    left: 700px;
+    top: 120px;
+}
+
+.about{
+    background: white;
+    width: 100%;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    font-family: ubuntu;
+    position: absolute;
+left: 0px;
+top: 600px;
+font-size: 23px;
+}
+
+
+.head .contact{
+    color: rgb(0, 195, 255);
+   position: absolute;
+   left: 150px;
+}
+
+   .about-me{
+       color: rgb(153, 153, 153);
+   }
+
+   .Details{
+        background: rgb(45, 45, 45);
+        width: 100%;
+        height: 450px;
+        color: rgb(255, 255, 255);
+        font-family: ubuntu;
+        position: absolute;
+    left: 0px;
+    top: 300px;
+    font-size: 22px;
+   }
+
+   .Details span{
+       color: cyan;
+   }
+   
+   .profile{
+       width: 300px;
+       height: 300px;
+
+       position: relative;
+       left: -600px;
+    top: -140px;
+    
+   }
+
+   .info{
+       position: relative;
+       left: -30px;
+       top: -200px;
+   }

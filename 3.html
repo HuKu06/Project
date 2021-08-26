@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marsian Emporium</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">  
+                    <img src="IMG-b545e84a48a33ee15dae4cd064887176-V (1).jpg" width="125px">
+                  </a>
+              </div>
+            <nav>    
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+        </div>
+
+
+
+<!--product-->
+<div class="categories">
+        <div class="small-container">
+            <h1>Products</h1>
+            <div class="row">
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/AYU_2599.jpg" alt="">
+                    <h2>G10 G401 Olive</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/2a.jpg" alt="">
+                    <h2>G10 G306 Navy</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/AYU_2855.jpg" alt="">
+                    <h2>G10 G305 Orange</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/G10-G304-Olive.jpg" alt="">
+                    <h2>G10 G304 Olive</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                   <a href="contact.html" >
+                   <p>Contact Us</p></a>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/G10-G303-Navy.jpg" alt="">
+                    <h2>G10 G303 Navy</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/G10-G302-Navy.jpg" alt="">
+                    <h2>G10 G302 Navy
+                    </h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/21A.jpg" alt="">
+                    <h2>
+                        G10 G301 Black</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/AYU_2687.jpg" alt="">
+                    <h2>G10 G300 Black</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                   <a href="contact.html" >
+                   <p>Contact Us</p></a>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/G10-G205-Olive.jpg" alt="">
+                    <h2>G10 G205 Olive</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/AYU_2716.jpg" alt="">
+                    <h2>G10 G204 Navy</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/G10-G203-Navy.jpg" alt="">
+                    <h2>G10 G203 Navy</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/AYU_2653.jpg" alt="">
+                    <h2>G10 G202 Black</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                   <a href="contact.html" >
+                   <p>Contact Us</p></a>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/AYU_3083.jpg" alt="">
+                    <h2>G10 G107 Navy</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/AYU_2962.jpg" alt="">
+                    <h2>G10 G105 Black Red</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/G10-G102-Sea-Green.jpg" alt="">
+                    <h2>G10 G102 Light Blue</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="contact.html" >
+                        <p>Contact Us</p></a>
+                </div>
+                <div class="col4">
+                    <img src="https://goldstarfootwear.com/wp-content/uploads/2020/06/G10-G100-Red.jpg" alt="">
+                    <h2>G10 G100 Red</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                   <a href="contact.html" >
+                   <p>Contact Us</p></a>
+                </div>
+               
+            </div>
+        
+            <div class="btn">
+               <a href="products.html"><span>1</span></a>
+               <a href="2.html"><span>2</span></a>
+               <a href="3.html"><span>3</span></a>
+               <a href="4.html"><span>4</span></a>
+               
+                <a href="4.html"><span><i class="fa fa-long-arrow-right"></i></span></a>
+            </div>
+        </div>
+    </div>
+   <!--footer-->
+   <div class="footer-container">
+    <div class="footer">
+       
+            <div class="footer-heading footer-1">
+            <div class="Social">
+                Social Media
+            </div>
+            <a href="https://instagram.com/goldstar_godawari?utm_medium=copy_link               "target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/goldstargodawari/              "target="_blank">Facebook</a>
+            
+        </div>
+        <div class="footer-heading footer-2">
+         <div class="Social">
+             Our Team
+         </div>
+         <a href="Portfolio.html"target="_blank">Pratyush Silwal</a>
+         <a href="pranab.html"target="_blank">Pranab Silwal</a>
+         <a href="Aayam.html"target="_blank">Aayam Pradhan</a>
+         <a href="praful2.html"target="_blank">Praful Maharjan</a>
+         <a href="rishav.html"target="_blank">Rishav Maharjan</a>
+         <a href="shrejal.html"target="_blank">Shrejal Ghimire</a>
+     </div>
+     <div class="footer-heading footer-3">
+         <div class="Social">
+             Other Links
+         </div>
+         <a href="#">Privacy Policy</a>
+         <a href="contact.html"target="_blank">Contact Us</a>
+         <a href="https://goldstarfootwear.com/"target="_blank">Official Page</a>
+     
+     </div> 
+     <div class="footer-img">
+          <img src="logo-main-dark-1.png" alt="" width="180px">
+      </div>
+      <br>
+    </div>
+    
+</div>   
+<div class="cc">
+     <i class="fa fa-copyright"></i><h class='copyright'>2021 Marsian Emporium</h>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'STIX Two Math', serif;
+}
+.navbar{
+        display:flex;
+        align-items: center;
+        padding: 10px;
+}
+.navbar a:hover{
+    color: red;
+    transition: .5s ease-out;
+    
+  }
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #545;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    color: #545;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-1{
+    flex-basis: 40%;
+    min-width: 300px;
+}
+.col-1 img{
+    border-radius:8px ;
+    align-items: center;
+    max-width: 105%;
+    padding: 50px 0;
+    height: auto;
+    
+}
+.col-1 h1{
+    line-height: 60px;
+    font-size: 50px;
+    margin:auto;
+}
+.fade-in-custom{
+    opacity:0;
+    animation: fadeIn ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.delay1 {
+    animation-delay: .5s;
+}
+.delay2 {
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    to  { opacity: 1;}
+
+}
+.header .row{
+    margin-top: auto;
+}
+p{
+    font-size: x-large;
+}
+h3{
+    font-size: xx-large;
+    margin: auto;
+    max-width: 1300px;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+}
+h3{
+    font-size: xx-large;
+    margin: 20px;
+    flex-basis: 100%;
+}
+h2{
+    margin: 100px auto;
+    text-align: center;
+    font-size: x-large;
+    max-width: 600px;
+    position: relative;
+
+}
+h2::before{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+    transform: translateX(55px);
+
+}
+h2::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+    transform: translateX(-55px);
+}
+span{
+    background: #fff;
+}
+h6{
+    margin: 100px auto;
+    text-align: center;
+    font-size: x-large;
+    max-width: 600px;
+    position: relative;
+}
+.vid{
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+    
+}

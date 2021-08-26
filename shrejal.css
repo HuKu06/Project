@@ -1,0 +1,120 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.header h1{
+ text-align: center;
+ font-size: 80px;
+ 
+ font-family: 'Hina Mincho', serif;
+
+}
+body{
+ background: linear-gradient(rgb(240, 76, 76), rgb(106, 106, 247));
+}
+.main{
+ background: white;
+ margin: 80px;
+}
+.about{
+ text-align: center;
+}
+.title{
+ text-align: center;
+ padding: 20px;
+ font-size: 25px;
+ font-family: 'Hina Mincho', serif;
+}
+h2{
+ font-size: 35px;
+ font-family: 'Hina Mincho', serif;
+ text-align: center;
+}
+.about{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows: 1fr;
+ background-color: rgb(255, 255, 255);
+ grid-gap: 20px;
+}
+.me{
+ padding: 25px;
+ text-align: justify;
+ font-size: 20px;
+ font-family: 'Hina Mincho', serif;
+}
+.skill{
+ padding: 25px;
+ text-align: justify;
+ font-size: 20px;
+ font-family: 'Hina Mincho', serif;
+}
+.photo img{
+ text-align: center;
+ border-radius: 70%;
+ transform: translateX(500px);
+}
+.details{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows: 1fr;
+ grid-gap: 20px;
+ font-family: 'Kaisei Tokumin', serif;
+}
+.info{
+ text-align: left;
+ list-style-type: none;
+}
+.info h3{
+ padding-left: 35px;
+ font-size: 30px;
+}
+.info ul li{
+ font-size: 20px;
+ padding: 10px;
+ margin-left: 90px;
+}
+.hobbies{
+ text-align: left;
+ list-style-type: none;
+}
+.hobbies h4{
+ position: relative;
+ font-size: 30px;
+}
+.hobbies ul li{
+ font-size: 20px;
+ padding: 10px;
+ margin-left: 60px;
+}
+.fa.fa-gratipay{
+ font-size:50px;
+ padding: 25px;
+ transform: translateY(10px);
+ color: red;
+}
+.fa.fa-address-book{
+ font-size:50px;
+ padding: 25px;
+ transform: translateY(10px);
+ color: red;
+}
+.contact{
+ text-align: center;
+ margin: 70px;
+ background-color: white;
+ font-family: 'Kaisei Tokumin', serif;
+}
+.contact h5{
+ font-size: 40px;
+}
+.contactme{
+ padding: 10px;
+ font-size: 25px;
+}
+.fa.fa-info-circle{
+ font-size: inherit;
+ color: red;
+ padding: 10px;
+}
